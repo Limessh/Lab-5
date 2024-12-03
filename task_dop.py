@@ -5,7 +5,7 @@ with open('task_add.txt', 'r', encoding='utf-8') as file:
 
 dates = re.findall(r'\s(\d{2,4}[./-]\d{2,4}[./-]\d{2,4})',text)
 emails = re.findall(r'\s([\w.%+-]+@[\w.-]+\.[a-zA-Z]{2,})', text)
-sites = re.findall(r'\s(https?://[^\s]+)', text)
+sites = re.findall(r'\s(https?://[a-zA-Z0-9.-]+)', text)
 
 
 print("Найденные даты:")
